@@ -1,0 +1,102 @@
+.body{
+    height: 100%;
+    margin: 0;
+}
+
+.EventInfoPage{
+    min-height: 100%;
+    position: relative;
+    
+}
+.marginpage{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.paddingPageF{
+    padding-bottom: 20%;
+}
+
+@media (max-width: 800px){
+    .paddingPageF{
+        padding-bottom: 30%;
+    }
+}
+
+/* HighlightTopic */
+.EventInfoTopicEIP{
+    font-family: 'Lora', serif;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* slideshow */
+.slideshow-containerEIP{
+    position: relative;
+    width: 50%;
+    padding-bottom: 45%;
+
+}
+.slide-imageEIP{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.slideshow-containerEIP .prev-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slideshow-containerEIP .next-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slideAndTextEIP{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    font-family: 'Archivo', sans-serif;
+}
+
+@media (max-width: 800px){
+    .slideshow-containerEIP{
+        margin: auto;;
+    }
+}
+
+.EventInfoContentEIP{
+    padding-left: 6%;
+}
+
+/* information  */
+.EventInfoEIP{
+    font-family: 'Archivo', sans-serif;
+}
+
+/* button  */
+.EventInfoButtonEIP{
+    text-decoration: underline;
+    background: none;
+    border: 1;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.EventInfoButtonEIP:hover {
+    color: blue;
+    border-color: blue;
+
+}
+
+

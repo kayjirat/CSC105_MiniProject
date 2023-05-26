@@ -1,0 +1,114 @@
+.body{
+    height: 100%;
+    margin: 0;
+}
+
+.HighlightInfoPage{
+    min-height: 100%;
+    position: relative;
+    
+}
+.marginpage{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+.paddingPageF{
+    padding-bottom: 20%;
+}
+
+@media (max-width: 800px){
+    .paddingPageF{
+        padding-bottom: 30%;
+    }
+}
+
+/* HighlightTopic */
+.highlightTopicHIP{
+    font-family: 'Lora', serif;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* slideshow */
+.slideshow-containerHIP{
+    position: relative;
+    width: 50%;
+    padding-bottom: 45%;
+
+}
+.slide-imageHIP{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.slideshow-containerHIP .prev-button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slideshow-containerHIP .next-button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slideAndTextHIP{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    font-family: 'Archivo', sans-serif;
+}
+
+@media (max-width: 800px){
+    .slideshow-containerHIP{
+        margin: auto;;
+    }
+}
+
+.highlightContentHIP{
+    padding-left: 6%;
+}
+
+/* information  */
+.highlightInfoHIP{
+    font-family: 'Archivo', sans-serif;
+}
+
+/* button  */
+.highlightButtonHIP{
+    text-decoration: underline;
+    background: none;
+    border: 1;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.highlightButtonHIP:hover {
+    color: blue;
+    border-color: blue;
+
+}
+
+/* footer */
+.footerBackground{
+    background-color:#F2F0E7 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0vh;
+    font-family: "Lora";
+    text-align: center;
+    padding: 1.6%;
+    
+}
