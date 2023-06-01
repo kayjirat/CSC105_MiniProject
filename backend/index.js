@@ -42,6 +42,8 @@ app.get("/", (req, res) => {
 app.post("/login", require("./endpoint_login"));
 app.post("/register", require("./endpoint_register"));
 app.get("/check", require("./endpoint_check_login"));
+app.patch("/editProfile/:userId", require("./endpoint_editProfile"));
+app.get("/user/:userId", require("./endpoint_user"));
 
 // app.get("/:userId", require("./user"));
 

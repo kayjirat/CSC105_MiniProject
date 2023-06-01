@@ -3,7 +3,7 @@ import { useState } from 'react';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
-import './HighlightInfo.css'
+import '../style/HighlightInfo.css'
 import NavBar from '../component/Navbar';
 import Footer from '../component/Footer';
 import { useNavigate } from 'react-router-dom';

@@ -30,7 +30,8 @@ function LoginPage() {
       if (response.data.success) {
         // localStorage.setItem("token", response.data.token);
         // localStorage.setItem("userId", response.data.user.id);
-        console.log("success");
+        console.log(response.data.user.userId);
+        document.cookie = "userId=" + response.data.user.userId;
         navigate("/home");
       } else {
         setEmail("");

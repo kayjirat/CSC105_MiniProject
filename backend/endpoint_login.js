@@ -6,7 +6,7 @@ module.exports = (req, res) => {
 	const email = req.body.email;
 	const password = req.body.password;
 
-    var sql = mysql.format("SELECT * FROM users WHERE email = ?", [email]);
+    var sql = mysql.format("SELECT * FROM user WHERE email = ?", [email]);
 	console.log("DEBUG: /basic/login => " + sql);
 	connection.query(sql, async (err, rows) => {
 		if (err) {

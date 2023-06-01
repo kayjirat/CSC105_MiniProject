@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
     console.log("Hash #1: ", hash1);
 
     var sql = mysql.format(
-      "INSERT INTO users (username, password, email) VALUES ( ?, ?, ?)",
+      "INSERT INTO user (username, password, email) VALUES ( ?, ?, ?)",
       [username, hash1, email]
     );
 

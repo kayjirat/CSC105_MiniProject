@@ -10,7 +10,9 @@ import Exhibition from "./pages/Exhibition";
 import EventPage from "./pages/EventPage";
 import EventInfo from "./pages/EventInfo";
 import AboutUs from "./pages/AboutUs";
-
+import ExhibitionInfo from "./pages/ExhibitionInfo";
+import Profile from "./pages/Profile";
+import EditProfile from "./pages/editProfile";
 function App() {
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -47,6 +49,10 @@ function App() {
         <Route path="/event" element={<EventPage />} />
         <Route path="/eventInfo" element={<EventInfo />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/exhibitionInfo" element={<ExhibitionInfo />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/editprofile" element={<EditProfile />} />
+        
       </Routes>
     </BrowserRouter>
   );

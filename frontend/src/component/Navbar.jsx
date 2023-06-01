@@ -31,9 +31,9 @@ export default function NavBar() {
             <Button onClick={() => handleClick("/event")} sx={{color: "black", fontFamily: 'Lora'}}>Event</Button>
             <Button onClick={() => handleClick("/aboutus")} sx={{color: "black", fontFamily: 'Lora'}}>About us</Button>
           </Box>
-          <IconButton>
+          <IconButton onClick={() => handleClick("/profile")}>
             <AccountCircleIcon/>
-          </IconButton>
+          </IconButton >
           <IconButton sx={{display:{xs:"block",md:"none"},color:"balck"}}>
             <MenuIcon />
           </IconButton>

@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.EventInfoPage{
+.HighlightInfoPage{
     min-height: 100%;
     position: relative;
     
@@ -23,7 +23,7 @@
 }
 
 /* HighlightTopic */
-.EventInfoTopicEIP{
+.highlightTopicHIP{
     font-family: 'Lora', serif;
     justify-content: center;
     text-align: center;
@@ -32,35 +32,37 @@
 
 
 /* slideshow */
-.slideshow-containerEIP{
+.slideshow-containerHIP{
     position: relative;
     width: 50%;
     padding-bottom: 45%;
 
 }
-.slide-imageEIP{
+.slide-imageHIP{
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
 }
-.slideshow-containerEIP .prev-button {
+.slideshow-containerHIP .prev-button {
     position: absolute;
     top: 50%;
     left: 0;
     border-radius: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
-.slideshow-containerEIP .next-button {
+.slideshow-containerHIP .next-button {
     position: absolute;
     top: 50%;
     right: 0;
     border-radius: 50%;
     transform: translateY(-50%);
+    cursor: pointer;
 }
 
-.slideAndTextEIP{
+.slideAndTextHIP{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -69,22 +71,22 @@
 }
 
 @media (max-width: 800px){
-    .slideshow-containerEIP{
+    .slideshow-containerHIP{
         margin: auto;;
     }
 }
 
-.EventInfoContentEIP{
+.highlightContentHIP{
     padding-left: 6%;
 }
 
 /* information  */
-.EventInfoEIP{
+.highlightInfoHIP{
     font-family: 'Archivo', sans-serif;
 }
 
 /* button  */
-.EventInfoButtonEIP{
+.highlightButtonHIP{
     text-decoration: underline;
     background: none;
     border: 1;
@@ -93,10 +95,22 @@
     font-size: 1.2rem;
 }
 
-.EventInfoButtonEIP:hover {
+.highlightButtonHIP:hover {
     color: blue;
     border-color: blue;
 
 }
 
-
+/* footer */
+.footerBackground{
+    background-color:#F2F0E7 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 0vh;
+    font-family: "Lora";
+    text-align: center;
+    padding: 1.6%;
+    
+}

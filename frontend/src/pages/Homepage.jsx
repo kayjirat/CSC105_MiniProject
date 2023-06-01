@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import './HomePage.css'
+import '../style/HomePage.css'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
