@@ -47,6 +47,7 @@
     flex-wrap: wrap;
     align-items: center;
     position: relative;
+    
 }
 .eventPreveiew3rdEP{
     display: flex;
@@ -62,6 +63,7 @@
 }
 .eventPictureEP{
     width: 200px;
+    margin-left: 6%;
 }
 .eventButtonEP{
     position: absolute;
