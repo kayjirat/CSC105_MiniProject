@@ -1,114 +1,108 @@
-.body{
-    height: 100%;
-    margin: 0;
+.body {
+  height: 100%;
+  margin: 0;
 }
 
-.Homepage{
-    min-height: 100%;
-    position: relative;
-    
+.Homepage {
+  min-height: 100%;
+  position: relative;
 }
-.marginpage{
-    margin-left: 5vh;
-    margin-right: 5vh;
-    
+.marginpage {
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
-.paddingPageF{
-    padding-bottom: 20%;
+.paddingPageF {
+  padding-bottom: 20%;
 }
 
-@media (max-width: 800px){
-    .paddingPageF{
-        padding-bottom: 30%;
-    }
+@media (max-width: 800px) {
+  .paddingPageF {
+    padding-bottom: 30%;
+  }
 }
-
 
 /* slideshow */
-.slideshow-containerHP{
-    position: relative;
-    width: 100%;
-    padding-bottom: 50%;
-
+.slideshow-containerHP {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
 }
-.slide-imageHP{
-    position: absolute;
+.slide-imageHP {
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
 .slideshow-containerHP .prev-button {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 .slideshow-containerHP .next-button {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 /* Card */
-#CardHP{
-    font-family: 'Archivo', sans-serif;
+#CardHP {
+  font-family: "Archivo", sans-serif;
 }
-.highlightTopicHP{
-    font-family: 'Lora', serif;
+.highlightTopicHP {
+  font-family: "Lora", serif;
 }
-.highlightCardLinkHP{
-    text-decoration: none;
-}
-
-.highLightCardLinkHP:hover{
-    color: none;
+.highlightCardLinkHP {
+  text-decoration: none;
 }
 
+.highLightCardLinkHP:hover {
+  color: none;
+}
 
 /* Event */
-.eventTopicHP{
-    font-family: 'Lora', serif;
+.eventTopicHP {
+  font-family: "Lora", serif;
 }
-.eventContainerHP{
-    background-color: #CBD4D5;
-    padding: 3%;
-    font-family: 'Archivo', sans-serif;
+.eventContainerHP {
+  background-color: #cbd4d5;
+  padding: 3%;
+  font-family: "Archivo", sans-serif;
 }
-.eventPreveiew1stHP{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
+.eventPreveiew1stHP {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
 }
-.eventPreveiew2ndHP{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
+.eventPreveiew2ndHP {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
 }
-.eventPictureHP{
-    width: 200px;
+.eventPictureHP {
+  width: 200px;
+  margin-left: 10vh;
 }
-.eventButtonHP{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 1vh;
-    text-decoration: underline;
-    background: none;
-    border: none;
-    color: black;
-    cursor: pointer;
+.eventButtonHP {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1vh;
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
 }
 .eventButtonHP:hover {
-    color: white;
-    border-color: blue;
-  }
-
-
+  color: white;
+  border-color: blue;
+}

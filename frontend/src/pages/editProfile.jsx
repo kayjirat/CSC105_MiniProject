@@ -92,7 +92,7 @@ function EditProfile() {
           className="profileTopic"
           component="h1"
           variant="h4"
-          sx={{ fontFamily: "Rubik", color: "black" }}
+          sx={{ fontFamily: "Lora", color: "white", fontWeight: "bold" }}
         >
           Edit Profile
         </Typography>
@@ -100,7 +100,12 @@ function EditProfile() {
           <div className="containerLargest">
             <div className="profileContainer">
               <form>
-                <h5 className="profileInfoTopic">Username</h5>
+                <h5
+                  className="profileInfoTopic"
+                  style={{ fontFamily: "Lora , serif" }}
+                >
+                  Username
+                </h5>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <TextField
                     sx={{ mb: "10px" }}
@@ -111,7 +116,12 @@ function EditProfile() {
                     onChange={(e) => setUserName(e.target.value)}
                   />
                 </FormControl>
-                <h5 className="profileInfoTopic">Email</h5>
+                <h5
+                  className="profileInfoTopic"
+                  style={{ fontFamily: "Lora , serif" }}
+                >
+                  Email
+                </h5>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <TextField
                     sx={{ mb: "10px" }}
@@ -123,7 +133,12 @@ function EditProfile() {
                   />
                 </FormControl>
                 <br />
-                <h5 className="profileInfoTopic">Bio</h5>
+                <h5
+                  className="profileInfoTopic"
+                  style={{ fontFamily: "Lora , serif" }}
+                >
+                  Bio
+                </h5>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <TextField
                     sx={{ mb: "10px" }}

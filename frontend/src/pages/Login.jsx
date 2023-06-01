@@ -87,7 +87,11 @@ function LoginPage() {
             borderRadius: "2%",
           }}
         >
-          <Typography component="h1" variant="h5" sx={{fontFamily: "Archivo" }}>
+          <Typography
+            component="h1"
+            variant="h5"
+            sx={{ fontFamily: "Archivo" }}
+          >
             Log in
           </Typography>
           <Box
@@ -120,9 +124,9 @@ function LoginPage() {
               id="password"
               autoComplete="current-password"
               value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            error={!!passwordError}
-            helperText={passwordError}
+              onChange={(e) => setPassword(e.target.value)}
+              error={!!passwordError}
+              helperText={passwordError}
             />
             {/* <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
@@ -133,7 +137,7 @@ function LoginPage() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2, fontFamily: "Archivo"  }}
+              sx={{ mt: 3, mb: 2, fontFamily: "Archivo" }}
               style={{
                 backgroundColor: "black",
                 border: "none",
@@ -149,11 +153,7 @@ function LoginPage() {
             </Button>
             <Grid container>
               <Grid item>
-                <Link to="/register"
-                  href="/register"
-                  variant="body2"
-
-                >
+                <Link to="/register" href="/register" variant="body2">
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>

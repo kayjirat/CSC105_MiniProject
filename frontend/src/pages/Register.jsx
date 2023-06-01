@@ -40,7 +40,7 @@ function RegisterPage() {
   const handleConfirmPasswordChange = (event) => {
     setConfirm(event.target.value);
   };
-  
+
   const validateForm = () => {
     let check = true;
     let updatedErrors = {};

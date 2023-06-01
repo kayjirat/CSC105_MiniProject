@@ -8,7 +8,6 @@ function WelcomePage() {
     navigate(destination);
   };
 
- 
   return (
     <div
       style={{
@@ -21,7 +20,6 @@ function WelcomePage() {
         justifyContent: "center",
       }}
     >
-      
       <div
         style={{
           color: "white",

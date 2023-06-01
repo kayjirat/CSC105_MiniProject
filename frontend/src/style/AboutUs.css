@@ -1,58 +1,56 @@
-.body{
-    height: 100%;
-    margin: 0;
+.bodyAB {
+  height: 100%;
+  margin: 0;
 }
 
-.AboutUspage{
-    min-height: 100%;
-    position: relative;
-    
+.AboutUspage {
+  min-height: 100%;
+  position: relative;
 }
-.marginpage{
-    margin-left: 5vh;
-    margin-right: 5vh;
-    
+.marginpage {
+  margin-left: 5vh;
+  margin-right: 5vh;
 }
-.paddingPageF{
-    padding-bottom: 20%;
+.paddingPageF {
+  padding-bottom: 20%;
 }
 
-@media (max-width: 800px){
-    .paddingPageF{
-        padding-bottom: 30%;
-    }
+@media (max-width: 800px) {
+  .paddingPageF {
+    padding-bottom: 30%;
+  }
 }
 
 /* topic */
-.TopicAU{
-    font-family: 'Lora', serif;
-    text-align: center;
-    font-size: 1.7rem;
+.TopicAU {
+  font-family: "Lora", serif;
+  text-align: center;
+  font-size: 1.7rem;
 }
 
 /* text */
-.AboutUsText{
-    text-align: center;
-    font-family: 'Archivo', sans-serif;
+.AboutUsText {
+  text-align: center;
+  font-family: "Archivo", sans-serif;
 }
 
-.AUpicContainer{
-    position: relative;
-    width: 100%;
-    padding-bottom: 50%;
+.AUpicContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50%;
 }
-.AUpic{
-    position: absolute;
+.AUpic {
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
 
-.ContactUsContainer{
-    padding: 5%;
-    background-color: #AEA189;
-    color: white;
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
+.ContactUsContainer {
+  padding: 5%;
+  background-color: #aea189;
+  color: white;
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
 }

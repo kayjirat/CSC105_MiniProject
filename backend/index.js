@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const secret = "secreteiei";
 const { check, validationResult } = require("express-validator");
 const cors = require("cors");
 
@@ -42,6 +41,7 @@ app.get("/", (req, res) => {
 app.post("/login", require("./endpoint_login"));
 app.post("/register", require("./endpoint_register"));
 app.get("/check", require("./endpoint_check_login"));
+app.get("/artwork/:artworkId", require("./endpoint_artwork"));
 app.patch("/editProfile/:userId", require("./endpoint_editProfile"));
 app.get("/user/:userId", require("./endpoint_user"));
 

@@ -4,7 +4,7 @@ import NavBar from "../component/Navbar";
 
 export default Error = () => {
   return (
-    <Box sx={{ backgroundColor: "white", height: "100vh" }}>
+    <Box sx={{ backgroundColor: "#CBD4D5", height: "100vh" }}>
       <NavBar />
       <Box
         sx={{
@@ -12,13 +12,13 @@ export default Error = () => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
-          height: '100vh',
+          paddingTop: "30vh",
         }}
       >
         <Typography variant="h3" sx={{ fontFamily: "Lora", color: "black" }}>
           404 Not Found
         </Typography>
-        <img style={{ width: "10vw" }} src="/public/logofor404.png" />
+        <img style={{ width: "15vw" }} src="../logo.png" />
       </Box>
     </Box>
   );

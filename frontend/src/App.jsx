@@ -6,15 +6,12 @@ import LoginPage from "./pages/Login";
 import RegisterPage from "./pages/Register";
 import HomePage from "./pages/Homepage";
 import HighlightInfo from "./pages/HighlightInfo";
-import Exhibition from "./pages/Exhibition";
-import EventPage from "./pages/EventPage";
-import EventInfo from "./pages/EventInfo";
 import AboutUs from "./pages/AboutUs";
-import ExhibitionInfo from "./pages/ExhibitionInfo";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/editProfile";
 import Error from "./pages/Error";
-
+import ExhibitionPage from "./pages/ExhibitionPage";
+import ExhibitionInfo from "./pages/ExhibitionInfo";
 
 function App() {
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -48,15 +45,12 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/highlightInfo" element={<HighlightInfo />} />
-        <Route path="/exhibition" element={<Exhibition />} />
-        <Route path="/event" element={<EventPage />} />
-        <Route path="/eventInfo" element={<EventInfo />} />
+        <Route path="/exhibition" element={<ExhibitionPage />} />
+        <Route path="/exhibitionifo" element={<ExhibitionInfo />} />
         <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/exhibitionInfo" element={<ExhibitionInfo />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/editprofile" element={<EditProfile />} />
         <Route path="/*" element={<Error />} />
-        
       </Routes>
     </BrowserRouter>
   );

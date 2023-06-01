@@ -29,7 +29,7 @@ module.exports = (req, res) => {
 			if (valid) {
 				const token = jwt.sign(
 					{
-						userId: rows[0].user_id,
+						userId: rows[0].userId,
 					},
 					"ZJGX1QL7ri6BGJWj3t",
 					{ expiresIn: "1h" }

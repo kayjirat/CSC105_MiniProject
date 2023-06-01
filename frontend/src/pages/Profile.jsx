@@ -69,31 +69,49 @@ function Profile(params) {
   return (
     <div>
       <NavBar />
-      <Box sx={{ height: "50px", backgroundColor: "#ADDCE4" }}></Box>
       <div className="bodyProfile">
         <Typography
           className="profileTopic"
           component="h1"
           variant="h4"
-          sx={{ fontFamily: "Rubik" }}
+          sx={{
+            fontFamily: "Lora , serif",
+            color: "white",
+            fontWeight: "bold",
+          }}
         >
           Profile
         </Typography>
         <div className="centeredContainer">
           <div className="containerLargest">
             <div className="profileContainer">
-              <h5 className="profileInfoTopic">Username</h5>
-              <Typography sx={{ fontFamily: "Roboto Mono" }}>
+              <h5
+                className="profileInfoTopic"
+                style={{ fontFamily: "Lora , serif" }}
+              >
+                Username
+              </h5>
+              <Typography sx={{ fontFamily: "Archivo" }}>
                 {userData.username}
               </Typography>
               <br />
-              <h5 className="profileInfoTopic">Email</h5>
-              <Typography sx={{ fontFamily: "Roboto Mono" }}>
+              <h5
+                className="profileInfoTopic"
+                style={{ fontFamily: "Lora , serif" }}
+              >
+                Email
+              </h5>
+              <Typography sx={{ fontFamily: "Archivo" }}>
                 {userData.email}
               </Typography>
               <br />
-              <h5 className="profileInfoTopic">Bio</h5>
-              <Typography sx={{ fontFamily: "Roboto Mono" }}>
+              <h5
+                className="profileInfoTopic"
+                style={{ fontFamily: "Lora , serif" }}
+              >
+                Bio
+              </h5>
+              <Typography sx={{ fontFamily: "Archivo" }}>
                 {userData.bio}
               </Typography>
               <br />
@@ -118,7 +136,7 @@ function Profile(params) {
         </div>
       </div>
       <Dialog open={logoutModalOpen} onClose={handleCloseLogoutModal}>
-        <DialogTitle sx={{ fontFamily: "Rubik", fontWeight: "800" }}>
+        <DialogTitle sx={{ fontFamily: "Lora , serif", fontWeight: "800" }}>
           Do you want to logout ?
         </DialogTitle>
         <DialogActions>

@@ -1,9 +1,9 @@
-.bodyHI {
+.bodyEI {
   height: 100%;
   margin: 0;
 }
 
-.HighlightInfoPage {
+.EventInfoPage {
   min-height: 100%;
   position: relative;
 }
@@ -22,7 +22,7 @@
 }
 
 /* HighlightTopic */
-.highlightTopicHIP {
+.EventInfoTopicEIP {
   font-family: "Lora", serif;
   justify-content: center;
   text-align: center;
@@ -30,19 +30,19 @@
 }
 
 /* slideshow */
-.slideshow-containerHIP {
+.slideshow-containerEIP {
   position: relative;
   width: 50%;
   padding-bottom: 45%;
 }
-.slide-imageHIP {
+.slide-imageEIP {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
-.slideshow-containerHIP .prev-button {
+.slideshow-containerEIP .prev-button {
   position: absolute;
   top: 50%;
   left: 0;
@@ -50,7 +50,7 @@
   transform: translateY(-50%);
   cursor: pointer;
 }
-.slideshow-containerHIP .next-button {
+.slideshow-containerEIP .next-button {
   position: absolute;
   top: 50%;
   right: 0;
@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 
-.slideAndTextHIP {
+.slideAndTextEIP {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -68,22 +68,22 @@
 }
 
 @media (max-width: 800px) {
-  .slideshow-containerHIP {
+  .slideshow-containerEIP {
     margin: auto;
   }
 }
 
-.highlightContentHIP {
+.EventInfoContentEIP {
   padding-left: 6%;
 }
 
 /* information  */
-.highlightInfoHIP {
+.EventInfoEIP {
   font-family: "Archivo", sans-serif;
 }
 
 /* button  */
-.highlightButtonHIP {
+.EventInfoButtonEIP {
   text-decoration: underline;
   background: none;
   border: 1;
@@ -92,20 +92,7 @@
   font-size: 1.2rem;
 }
 
-.highlightButtonHIP:hover {
+.EventInfoButtonEIP:hover {
   color: blue;
   border-color: blue;
-}
-
-/* footer */
-.footerBackground {
-  background-color: #f2f0e7;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin-left: 0vh;
-  font-family: "Lora";
-  text-align: center;
-  padding: 1.6%;
 }
