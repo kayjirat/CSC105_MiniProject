@@ -58,7 +58,7 @@ app.delete("/user", (req, res) => {
       });
     } else {
       res.json({
-        message:"delete successful"
+        message: "delete successful",
       });
     }
   });

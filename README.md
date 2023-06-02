@@ -1,20 +1,26 @@
 # Art Collection
+
 Art Collection is a website that collects exhibitions for users to explore before visiting.
 
 ## Features
 
-| Feature | Description                |
-| :-------- | :------------------------- |
-| `Signup` | create account for the website|
-| `Login/Logout` | log in and log out from the website|
-| `update profile` | edit account |
+| Feature          | Description                         |
+| :--------------- | :---------------------------------- |
+| `Signup`         | create account for the website      |
+| `Login/Logout`   | log in and log out from the website |
+| `update profile` | edit account                        |
+| `delete account`  | delete account                     |
 
 ## To run the frontend and backend
+
 Frontend -> cd frontend
+
 ```bash
   npm start
 ```
+
 Backend -> cd backend
+
 ```bash
   npm run dev
 ```
@@ -28,10 +34,10 @@ URL
 
 #### Request Body
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `email` | `string` | email address |
-| `password` | `string` | password | 
+| Parameter  | Type     | Description   |
+| :--------- | :------- | :------------ |
+| `email`    | `string` | email address |
+| `password` | `string` | password      |
 
 Example
 
@@ -41,16 +47,16 @@ Example
   password: "1234"
 }
 ```
+
 #### Success
 
 `200` success
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `success` | `boolean` | success status |
-| `message` | `string` | login result |
-| `user` | `string` | the response with userId email hashpassword username and bio |
-
+| Parameter | Type      | Description                                                  |
+| :-------- | :-------- | :----------------------------------------------------------- |
+| `success` | `boolean` | success status                                               |
+| `message` | `string`  | login result                                                 |
+| `user`    | `string`  | the response with userId email hashpassword username and bio |
 
 Example
 
@@ -67,6 +73,7 @@ Example
     }
 }
 ```
+
 ### Register
 
 URL
@@ -74,11 +81,11 @@ URL
 
 #### Request Body
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `username` | `string` | username | 
-| `email` | `string` | email address |  
-| `password` | `string` | password | 
+| Parameter  | Type     | Description   |
+| :--------- | :------- | :------------ |
+| `username` | `string` | username      |
+| `email`    | `string` | email address |
+| `password` | `string` | password      |
 
 Example
 
@@ -89,15 +96,15 @@ Example
     password: "1234"
 }
 ```
+
 #### Success
 
 `200` success
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `success` | `boolean` | success status |
-| `message` | `string` | register result |
-
+| Parameter | Type      | Description     |
+| :-------- | :-------- | :-------------- |
+| `success` | `boolean` | success status  |
+| `message` | `string`  | register result |
 
 Example
 
@@ -107,6 +114,7 @@ Example
     message: "User has been created",
 }
 ```
+
 ### Authentication Check
 
 URL
@@ -114,10 +122,9 @@ URL
 
 #### Request cookies
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `user` | `string` | token "user" in the cookies |
-
+| Parameter | Type     | Description                 |
+| :-------- | :------- | :-------------------------- |
+| `user`    | `string` | token "user" in the cookies |
 
 Example
 
@@ -126,15 +133,15 @@ Example
     user: "eyJhbGciOiJIUzI1Ni...""
 }
 ```
+
 #### Success
 
-`200` success
+`200` User is logged in
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `success` | `boolean` | success status |
-| `message` | `string` | Authentication status |
-
+| Parameter | Type      | Description           |
+| :-------- | :-------- | :-------------------- |
+| `success` | `boolean` | success status        |
+| `message` | `string`  | Authentication status |
 
 Example
 
@@ -144,3 +151,81 @@ Example
     message: "User is logged in",
 }
 ```
+
+### Get Logged in User
+
+URL
+`GET /user/:userId`
+
+#### Request Body
+
+| Parameter | Type  | Description |
+| :-------- | :---- | :---------- |
+| `userId`  | `int` | user id     |
+
+#### Success
+
+Response
+
+`200` user found
+
+| Parameter | Type      | Description                                                  |
+| :-------- | :-------- | :----------------------------------------------------------- |
+| `success` | `boolean` | success status                                               |
+| `message` | `string`  | user result                                                  |
+| `user`    | `string`  | the response with userId email hashpassword username and bio |
+
+Example
+
+```
+{
+    success: true,
+    message: "Found",
+    user: [
+        {
+            "userId": 10,
+            "email": "kk@gmail.com",
+            "password": "$2a$10$7ct/FqtnK3JHKjmB48a1WORMsefE0EiVG.lZPlCxiiHvq4iyiN.si",
+            "username": "kk",
+            "bio": null
+        }
+    ]
+
+}
+```
+
+### Edit user information
+
+URL
+`PATCH /editProfile/:userId`
+
+#### Request Body
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `username`| `string` | user name                  |
+| `email`   | `string` | email address              |
+| `bio`     | `string` | short biographical profile |
+
+#### Success
+
+Response
+
+`200` success
+
+### Delete User
+
+URL
+`DELETE /user`
+
+#### Request Body
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `userId`  | `int`    | user id                    |
+
+#### Success
+
+Response
+
+`200` delete successful
