@@ -45,6 +45,24 @@ app.get("/artwork/:artworkId", require("./endpoint_artwork"));
 app.patch("/editProfile/:userId", require("./endpoint_editProfile"));
 app.get("/user/:userId", require("./endpoint_user"));
 
+app.delete("/user", (req, res) => {
+  const userId = req.query.userId;
+  // console.log(userId);
+  const sqlSelect = "DELETE FROM user WHERE userId = ?";
+  connection.query(sqlSelect, [userId], (err, rows) => {
+    if (err) {
+      res.json({
+        error: "error",
+      });
+    } else {
+      res.json({
+        message:"delete successful"
+      });
+    }
+  });
+  // res.send("Hello World!");
+});
+
 // app.get("/:userId", require("./user"));
 
 app.listen(port, () => {

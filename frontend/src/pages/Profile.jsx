@@ -1,21 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import NavBar from "../component/Navbar";
 import { Typography } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import { Box } from "@mui/material";
-import Container from "@mui/material/Container";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import "../style/Profile.css";
-import axios from "axios";
+import Axios from "../AxiosInstance";
 import getCookie from "../util/getCookie";
 import Dialog from "@mui/material/Dialog";
 import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
-import IconButton from "@mui/material/IconButton";
-import CloseIcon from "@mui/icons-material/Close";
 import { useEffect } from "react";
 
 function Profile(params) {
@@ -36,7 +28,7 @@ function Profile(params) {
 
   const fetchUser = async (e) => {
     try {
-      const response = await axios.get(
+      const response = await Axios.get(
         `http://localhost:4000/user/${getCookie("userId")}`
       );
       if (response.data.success) {
@@ -65,6 +57,15 @@ function Profile(params) {
     // Fetch  data when the component mounts
     fetchUser();
   }, []);
+
+  const handleDelete = async () => {
+    try {
+      await Axios.delete(`http://localhost:4000/user?userId=${getCookie("userId")}`);
+      navigate("/login");
+    } catch (error) {
+      console.error("Error deleting user account:", error);
+    }
+  };
 
   return (
     <div>
@@ -134,6 +135,15 @@ function Profile(params) {
             </div>
           </div>
         </div>
+        <button
+          className="buttondelete"
+          style={{ marginTop: "15px", width: "200px" }}
+          variant="contained"
+          color="error"
+          onClick={handleDelete}
+        >
+          Delete Account
+        </button>
       </div>
       <Dialog open={logoutModalOpen} onClose={handleCloseLogoutModal}>
         <DialogTitle sx={{ fontFamily: "Lora , serif", fontWeight: "800" }}>
