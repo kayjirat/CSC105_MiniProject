@@ -41,9 +41,11 @@ app.get("/", (req, res) => {
 app.post("/login", require("./endpoint_login"));
 app.post("/register", require("./endpoint_register"));
 app.get("/check", require("./endpoint_check_login"));
+
 app.get("/artwork/:artworkId", require("./endpoint_artwork"));
-app.patch("/editProfile/:userId", require("./endpoint_editProfile"));
+
 app.get("/user/:userId", require("./endpoint_user"));
+app.patch("/editProfile/:userId", require("./endpoint_editProfile"));
 
 app.delete("/user", (req, res) => {
   const userId = req.query.userId;
