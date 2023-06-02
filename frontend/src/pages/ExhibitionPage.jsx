@@ -101,7 +101,7 @@ function ExhibitionPage() {
                       marginLeft: "6vh",
                     }}
                   >
-                    Mandala art activity for the development of <br />
+                    Mandala art activity for the development<br/> of
                     concentration and concentration
                   </h5>
                   <h5
@@ -111,10 +111,10 @@ function ExhibitionPage() {
                       marginLeft: "6vh",
                     }}
                   >
-                    by the Education Department, Bangkok Art and Culture Center
+                    by the Education Department, Bangkok Art and Culture Center<br/>
                     in collaboration
-                    <br />
-                    with the Department of Art Education, Faculty of Education,
+                   
+                    with the Department of Art Education, <br/>Faculty of Education,
                     Bansomdejchaopraya Rajabhat University
                   </h5>
                 </div>

@@ -160,7 +160,7 @@ function Profile(params) {
             <button
               style={{ marginLeft: "50px" }}
               className="buttonProfileLogout"
-              onClick={() => handleClick("/")}
+              onClick={() => handleClick("/login")}
             >
               Logout
             </button>
