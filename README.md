@@ -50,6 +50,8 @@ Example
 
 #### Success
 
+Response
+
 `200` success
 
 | Parameter | Type      | Description                                                  |
@@ -99,6 +101,8 @@ Example
 
 #### Success
 
+Response
+
 `200` success
 
 | Parameter | Type      | Description     |
@@ -135,6 +139,8 @@ Example
 ```
 
 #### Success
+
+Response
 
 `200` User is logged in
 
@@ -224,8 +230,30 @@ URL
 | :-------- | :------- | :------------------------- |
 | `userId`  | `int`    | user id                    |
 
+Example
+```
+ {
+    userId: "13"
+  }
+```
+
 #### Success
 
 Response
 
-`200` delete successful
+`200` success
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `success` | `boolean` | success status |
+| `message` | `string` | delete status |
+
+
+Example
+
+```
+{
+    success: true,
+    message: "delete successful"
+}
+```
