@@ -8,6 +8,7 @@ Art Collection is a website that collects exhibitions for users to explore befor
 | :--------------- | :---------------------------------- |
 | `Signup`         | create account for the website      |
 | `Login/Logout`   | log in and log out from the website |
+| `view artwork`   | view artwork of the page |
 | `update profile` | edit account                        |
 | `delete account`  | delete account                     |
 
@@ -65,7 +66,7 @@ Response
 | :-------- | :-------- | :----------------------------------------------------------- |
 | `success` | `boolean` | success status                                               |
 | `message` | `string`  | login result                                                 |
-| `user`    | `string`  | the response with userId email hashpassword username and bio |
+| `user`    | `array`  | the response with userId email hashpassword username and bio |
 
 Example
 
@@ -186,7 +187,7 @@ Response
 | :-------- | :-------- | :----------------------------------------------------------- |
 | `success` | `boolean` | success status                                               |
 | `message` | `string`  | user result                                                  |
-| `user`    | `string`  | the response with userId email hashpassword username and bio |
+| `user`    | `array`  | the response with userId email hashpassword username and bio |
 
 Example
 
