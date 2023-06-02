@@ -15,7 +15,7 @@ Art Collection is a website that collects exhibitions for users to explore befor
 
 - Front-end: React.js
 - Back-end: Node.js with Express.js
-- Database: MariaDB
+- Database: MariaDB/MySQL2
 - Other Dependencies/Libraries: MUI and you can find others on package.js
 
 ## To run the frontend and backend
