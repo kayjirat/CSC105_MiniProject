@@ -11,6 +11,13 @@ Art Collection is a website that collects exhibitions for users to explore befor
 | `update profile` | edit account                        |
 | `delete account`  | delete account                     |
 
+## Stack Technologies
+
+- Front-end: React.js
+- Back-end: Node.js with Express.js
+- Database: MariaDB
+- Other Dependencies/Libraries: MUI and you can find others on package.js
+
 ## To run the frontend and backend
 
 Frontend -> cd frontend
